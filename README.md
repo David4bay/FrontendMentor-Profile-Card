@@ -24,7 +24,7 @@ The challenge is to create this profile card design with as much closeness to th
 
 ### Screenshot
 
-![Desktop Preview](./screenshot/Screenshot.PNG)
+![Desktop Preview](./Screenshot/Screenshot.PNG)
 
 ### Links
 
