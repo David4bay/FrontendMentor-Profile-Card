@@ -28,8 +28,8 @@ The challenge is to create this profile card design with as much closeness to th
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/David4bay/FrontendMentor-Profile-Card.com)
+- Live Site URL: [Live URL](https://jovial-kitten-22b99a.netlify.app.com)
 
 ## My process
 
