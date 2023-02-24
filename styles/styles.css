@@ -12,42 +12,44 @@
 
 html, body {
   min-height: 100vh;
+  width: 100%;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main {
   display: flex;
   min-height: 100vh;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: hsl(185deg, 75%, 39%);
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 
 div.top-pattern {
-  background-image: url(/images/bg-pattern-top.svg);
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  transform: rotate(180deg) translateX(25%);
+  background: url(/images/bg-pattern-top.svg) no-repeat;
+  min-width: 1000px;
+  min-height: 970px;
   top: 0;
   left: 0;
+  transform: translateY(-40%) translateX(-10%);
   z-index: -1;
+  position: fixed;
 }
 
 div.bottom-pattern {
-  background-image: url(/images/bg-pattern-bottom.svg);
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  transform: translateX(30%);
+  background: url(/images/bg-pattern-bottom.svg) no-repeat;
+  width: 1000px;
+  height: 970px;
   bottom: 0;
   right: 0;
+  transform: translateY(50%);
   z-index: -1;
+  position: fixed;
 }
 
 article.card {
@@ -57,6 +59,7 @@ article.card {
   background-color: hsl(230deg, 0%, 100%);
   border-radius: 15px;
   z-index: 1;
+  transition: all;
 }
 
 figure.profile-pic {
@@ -82,7 +85,6 @@ section.top-section {
   height: 140px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  position: relative;
 }
 
 section.card-body {
@@ -124,7 +126,7 @@ section.profile-footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 25px;
   font-size: 1rem;
   border-top: 1px inset hsl(0deg, 0%, 59%);
 }
@@ -132,28 +134,64 @@ section.profile-footer {
 div.social-stat {
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
 strong.data {
   font-size: 1rem;
+  font-weight: 700;
   color: hsl(229deg, 23%, 23%);
 }
 
 p.social-info {
   padding-top: 0.2rem;
+  font-weight: 400;
   font-size: 14px;
+  color: hsl(0deg, 0%, 59%);
   letter-spacing: 1px;
 }
 
-footer.frontend-mentor-info {
-  text-align: center;
+div.attribution {
+  width: 100%;
+  background: none;
   color: hsl(0deg, 0%, 0%);
-  z-index: 1;
 }
 
 div.attribution a {
   text-decoration: none;
   color: hsl(0deg, 0%, 0%);
+}
+
+footer.frontend-mentor-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: hsl(0deg, 0%, 0%);
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  div.top-pattern {
+    background: url(/images/bg-pattern-top.svg) no-repeat;
+    width: 400px;
+    height: 370px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateX(-75%) translateY(-50%);
+  }
+  div.bottom-pattern {
+    background: url(/images/bg-pattern-bottom.svg) no-repeat;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: translateX(23%) translateY(30%);
+  }
 }/*# sourceMappingURL=styles.css.map */
